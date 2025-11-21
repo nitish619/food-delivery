@@ -13,7 +13,7 @@ export const inter = Inter({
 export const montserratBold = localFont({
   src: "../fonts/Montserrat-Bold.woff2",
   variable: "--font-montserratBold",
-  weight: "400",
+  weight: "800",
   style: "normal",
   display: "swap",
 });
@@ -29,7 +29,7 @@ export const montserratRegular = localFont({
 export const montserratSemiBold = localFont({
   src: "../fonts/Montserrat-SemiBold.woff2",
   variable: "--font-montserratSemiBold",
-  weight: "400",
+  weight: "600",
   style: "normal",
   display: "swap",
 });
