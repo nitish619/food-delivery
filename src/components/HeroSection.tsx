@@ -43,7 +43,7 @@ export default function HeroSection() {
         </div>
 
         {/* Phones (Desktop absolute) */}
-        <div className="hidden md:flex absolute left-1/2 top-[360px] transform -translate-x-1/2">
+        <div className="hidden md:flex absolute left-1/2 top-[520px] transform -translate-x-1/2">
           <Image
             src={heromobile}
             alt="Food App"
@@ -55,26 +55,26 @@ export default function HeroSection() {
       </div>
 
       {/* MOBILE VIEW */}
-      <div className="flex md:hidden flex-col items-center text-center px-4 pt-10 pb-16">
+      <div className="flex md:hidden flex-col items-center text-center px-5 pt-10 pb-16 gap-6 bg-[#FAFAFA]">
         <p className="uppercase text-gray-700 tracking-wide text-sm">
           Food app
         </p>
 
         <h1 className="text-gray-900 font-bold text-3xl leading-tight mt-4">
-          Why stay hungry when <br /> you can order form Bella Onojie
+          Why stay hungry when you can order form Bella Onojie
         </h1>
 
-        <p className="text-gray-700 mt-4 text-base">
+        <p className="text-gray-700 mt-4 text-[24px]">
           Download the bella onoje’s food app now on
         </p>
 
         {/* Buttons */}
-        <div className="flex items-center gap-4 mt-6">
-          <button className="bg-orange-500 text-white px-6 py-3 rounded-full font-semibold shadow-md">
+        <div className="flex flex-col items-center gap-4">
+          <button className="bg-primary text-white px-16 py-4 rounded-full font-semibold shadow-md">
             Playstore
           </button>
 
-          <button className="border border-gray-900 text-gray-900 px-6 py-3 rounded-full font-semibold shadow-md">
+          <button className="border border-primary text-gray-900 px-16 py-4 rounded-full font-semibold shadow-md">
             App store
           </button>
         </div>
@@ -85,7 +85,7 @@ export default function HeroSection() {
           alt="Food App"
           width={100}
           height={100}
-          className="drop-shadow-xl w-full"
+          className="w-full"
         />
       </div>
     </div>
