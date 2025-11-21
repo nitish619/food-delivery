@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------
+   BASE LAYER → Global + Typography
+------------------------------------ */
+@layer base {
+  /* Root variables */
+  :root {
+    --background: #FFFFFF;
+    --foreground: #171717;
+
+    --primary: #FA4A0C; /* red */
+    --secondary: #ffd500; /* yellow */
+    --tertiary: #f6f6f6; /* blue */
+
+    /* Typography scale */
+    --h1: clamp(2.4rem, 4vw, 3.6rem);
+    --h2: clamp(2.1rem, 3.5vw, 3.2rem);
+    --h3: clamp(1.8rem, 3vw, 2.6rem);
+    --h4: clamp(1.6rem, 2.5vw, 2.2rem);
+    --h5: clamp(1.4rem, 2vw, 1.9rem);
+    --h6: clamp(1.2rem, 1.8vw, 1.6rem);
+
+    --p: clamp(1rem, 1.3vw, 1.15rem);
+
+    /* Section headings */
+    --section-heading: clamp(2.2rem, 4vw, 3rem);
+    --section-subheading: clamp(1.4rem, 2.5vw, 2rem);
+
+    /* Pick your defaults fonts (change any time): */
+    --font-heading: var(--font-montserratBold);
+    --font-subheading: var(--font-montserratRegular);
+    --font-body: var(--font-montserratSemiBold);
+  }
+
+  .dark {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+
+    --primary: #FA4A0C; /* red */
+    --secondary: #ffd500; /* yellow */
+    --tertiary: #0066ff; /* blue */
+  }
+
+  /* Global body */
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: var(--h1);
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  h2 {
+    font-size: var(--h2);
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  h3 {
+    font-size: var(--h3);
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  h4 {
+    font-size: var(--h4);
+    font-weight: 600;
+    line-height: 1.25;
+  }
+  h5 {
+    font-size: var(--h5);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  h6 {
+    font-size: var(--h6);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  p {
+    font-size: var(--p);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+}
+
+/* ------------------------------------
+   COMPONENTS LAYER → Reusable Classes
+------------------------------------ */
+/* Responsive centered container */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Full-width container (100% but padded) */
+.container-full {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: var(--section-heading);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+/* Section Subheading */
+.section-subheading {
+  font-size: var(--section-subheading);
+  font-family: var(--font-subheading);
+  font-weight: 500;
+  line-height: 1.4;
+  opacity: 0.85;
+  margin-bottom: 1.5rem;
+}
+
+/* ------------------------------------
+   UTILITIES LAYER → Small helpers
+------------------------------------ */
+/* Balanced text wrap */
+.text-balanced {
+  text-wrap: balance;
+}
+
+/* Center content vertically & horizontally */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Smooth section spacing */
+.section-padding {
+  padding-top: clamp(3rem, 6vw, 6rem);
+  padding-bottom: clamp(3rem, 6vw, 6rem);
+}
