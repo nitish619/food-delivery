@@ -7,10 +7,10 @@ import Link from "next/link";
 import "animate.css";
 
 const header = [
-  { label: "home", link: "#" },
-  { label: "product", link: "#" },
-  { label: "faq", link: "#" },
-  { label: "contact", link: "#" },
+  { label: "home", link: "/" },
+  { label: "product", link: "/product" },
+  { label: "faq", link: "/faq" },
+  { label: "contact", link: "/contact" },
 ];
 
 export default function Header() {
