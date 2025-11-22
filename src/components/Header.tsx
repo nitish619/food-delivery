@@ -75,6 +75,7 @@ export default function Header() {
                 href={item.link}
                 className="capitalize text-[16px] font-medium animate__animated animate__fadeInBottomRight"
                 style={{ animationDelay: delay }}
+                onClick={() => setOpen(false)}
               >
                 {item.label}
               </Link>
